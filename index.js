@@ -38,9 +38,9 @@ const images = [
   },
 ];
 
-/* Kodlar Buradan aşağıya */
-
 // css dosyasının linki index.html'de eklenmemiş.
+
+/* Kodlar Buradan aşağıya */
 
 function myDiv() {
   let div = document.getElementsByClassName("gallery-content")[0];
@@ -51,4 +51,17 @@ function myDiv() {
   }
 }
 
-console.log("bakalım ", !undefined);
+myDiv();
+
+function pickAllImgs() {
+  document.querySelectorAll("img");
+}
+
+pickAllImgs();
+
+function addClass(className) {
+  let imgs = pickAllImgs();
+  imgs.classList.add(className);
+}
+
+addClass(border - md);
