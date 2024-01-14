@@ -54,7 +54,9 @@ function myDiv() {
 myDiv();
 
 function pickAllImgs() {
-  document.querySelectorAll("img");
+  let allImgs = document.querySelectorAll("img");
+  console.log(allImgs);
+  return allImgs;
 }
 
 pickAllImgs();
